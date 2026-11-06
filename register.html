@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Account | UTSAV Contractors</title>
+  <meta name="description" content="Register for a UTSAV client or planner account to save mood boards, track quotation stages, and receive VIP decor alerts.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg">
+  <link rel="alternate icon" href="assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <script>
+    (function() {
+      try {
+        const savedDir = localStorage.getItem('utsav_direction') || localStorage.getItem('direction') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+        const savedTheme = localStorage.getItem('utsav_theme') || localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body id="top">
+
+  <!-- Main Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top main-navbar" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo/logo.svg" alt="UTSAV Stage & Pandal Contractor Logo">
+        </a>
+        
+        <div class="d-flex align-items-center d-lg-none gap-2">
+          <button class="theme-toggle-btn" id="themeToggleBtnMobile" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-door-fill"></i>Home 1 – Grand Mandap</a></li>
+                <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-gem"></i>Home 2 – Royal Reception</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html"><i class="bi bi-grid-fill"></i>All Services Overview</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="pages/services/wedding-stage.html"><i class="bi bi-flower1"></i>Wedding Stage Decoration</a></li>
+                <li><a class="dropdown-item" href="pages/services/traditional-pandal.html"><i class="bi bi-building"></i>Traditional Marriage Pandal</a></li>
+                <li><a class="dropdown-item" href="pages/services/reception-decoration.html"><i class="bi bi-stars"></i>Reception Decoration</a></li>
+                <li><a class="dropdown-item" href="pages/services/engagement-decoration.html"><i class="bi bi-heart-fill"></i>Engagement Decoration</a></li>
+                <li><a class="dropdown-item" href="pages/services/birthday-decoration.html"><i class="bi bi-balloon-fill"></i>Birthday Party Setup</a></li>
+                <li><a class="dropdown-item" href="pages/services/corporate-events.html"><i class="bi bi-briefcase-fill"></i>Corporate Event Setup</a></li>
+                <li><a class="dropdown-item" href="pages/services/outdoor-events.html"><i class="bi bi-umbrella-fill"></i>Outdoor Event Tents</a></li>
+                <li><a class="dropdown-item" href="pages/services/floral-decoration.html"><i class="bi bi-flower2"></i>Exotic Floral Decoration</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="navbar-actions d-flex align-items-center gap-2 gap-xl-3 ms-lg-3 mt-3 mt-lg-0 flex-wrap flex-lg-nowrap">
+            <div class="dir-toggle-wrapper d-flex align-items-center justify-content-between w-100 w-lg-auto">
+              <span class="dir-toggle-label d-lg-none text-muted small fw-semibold"><i class="bi bi-translate me-1"></i>Direction:</span>
+              <div class="dir-toggle-group" role="group" aria-label="Language Direction">
+                <button type="button" class="btn btn-dir-toggle active" data-dir="ltr" aria-pressed="true" title="Left-to-Right Layout">LTR</button>
+                <button type="button" class="btn btn-dir-toggle" data-dir="rtl" aria-pressed="false" title="Right-to-Left Layout">RTL</button>
+              </div>
+            </div>
+            <button class="theme-toggle-btn d-none d-lg-inline-flex" id="themeToggleBtn" aria-label="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <a href="get-quote.html" class="btn btn-gold w-100 w-lg-auto text-center justify-content-center">
+              <i class="bi bi-clipboard2-check-fill"></i> Get a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner" id="page-banner">
+    <div class="container">
+      <h1 class="reveal-fade-up">Create Client Account</h1>
+      <p class="reveal-fade-up delay-100">
+        Register in minutes to unlock custom 3D event previews, invoice history, and VIP support.
+      </p>
+      <nav aria-label="breadcrumb" class="reveal-fade-up delay-200">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Register</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Register Form Section -->
+  <section class="section-padding bg-white" id="register-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-10">
+          <div class="form-card reveal-fade-up">
+            <div class="text-center mb-4">
+              <div class="d-inline-flex align-items-center justify-content-center bg-cream text-maroon rounded-circle mb-3" style="width: 64px; height: 64px; font-size: 1.75rem;">
+                <i class="bi bi-person-plus-fill"></i>
+              </div>
+              <h3 class="fw-bold mb-1">Join UTSAV Celebrations</h3>
+              <p class="text-muted small">Collaborate directly with our event architects and design team</p>
+            </div>
+
+            <form id="registerForm" novalidate>
+              <div class="feedback-alert mb-3"></div>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="regName" class="form-label">Full Name <span class="required">*</span></label>
+                  <input type="text" class="form-control" id="regName" name="fullName" placeholder="e.g. Ramesh Kumar" autocomplete="name" maxlength="50" required>
+                  <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="regPhone" class="form-label">Phone Number <span class="required">*</span></label>
+                  <input type="tel" class="form-control" id="regPhone" name="phone" placeholder="e.g. 9840123456" inputmode="numeric" maxlength="10" autocomplete="tel" required>
+                  <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-12">
+                  <label for="regEmail" class="form-label">Email Address <span class="required">*</span></label>
+                  <input type="email" class="form-control" id="regEmail" name="email" placeholder="name@example.com" autocomplete="email" required>
+                  <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="regRole" class="form-label">I Am A <span class="required">*</span></label>
+                  <select class="form-select" id="regRole" name="role" required>
+                    <option value="" selected disabled>Select Role</option>
+                    <option value="client">Wedding Family / Host</option>
+                    <option value="planner">Wedding & Event Planner</option>
+                    <option value="corporate">Corporate Brand Manager</option>
+                    <option value="vendor">Lighting & Sound Partner</option>
+                  </select>
+                  <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="regDate" class="form-label">Upcoming Event Date</label>
+                  <input type="date" class="form-control" id="regDate" name="eventDate">
+                </div>
+                <div class="col-md-6">
+                  <label for="regPassword" class="form-label">Password <span class="required">*</span></label>
+                  <div class="password-toggle-group">
+                    <input type="password" class="form-control" id="regPassword" name="password" placeholder="Minimum 8 characters" required>
+                    <button type="button" class="password-toggle-btn" data-target="regPassword" aria-label="Toggle password visibility">
+                      <i class="bi bi-eye"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="regConfirmPassword" class="form-label">Confirm Password <span class="required">*</span></label>
+                  <div class="password-toggle-group">
+                    <input type="password" class="form-control" id="regConfirmPassword" name="confirmPassword" placeholder="Re-enter password" required>
+                    <button type="button" class="password-toggle-btn" data-target="regConfirmPassword" aria-label="Toggle password visibility">
+                      <i class="bi bi-eye"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="termsAgree" name="terms" required>
+                    <label class="form-check-label small" for="termsAgree">
+                      I agree to UTSAV's <a href="#" class="text-maroon text-decoration-underline" onclick="event.preventDefault(); alert('Terms of Service: All event specifications and inventory bookings are subject to contract confirmation.');">Terms of Service</a> and Privacy Policy.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-gold w-100 justify-content-center py-2">
+                    <i class="bi bi-check-circle-fill me-1"></i> Complete Registration
+                  </button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  
+
+  <!-- Back to Top Button -->
+  
+
+  <!-- JavaScript Files -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/footer.js"></script>
+</body>
+</html>

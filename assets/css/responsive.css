@@ -1,0 +1,369 @@
+/* ==========================================================================
+   PROJECT 58 – UTSAV STAGE, TENT & PANDAL CONTRACTOR
+   Responsive Stylesheet (responsive.css)
+   ========================================================================== */
+
+/* Large Desktops and Monitors (1440px and up) */
+@media (min-width: 1400px) {
+  .hero-title {
+    font-size: 3.8rem;
+  }
+  .section-title {
+    font-size: 2.6rem;
+  }
+}
+
+/* Laptops / Desktops (992px to 1199px) */
+@media (max-width: 1199.98px) {
+  .hero-title {
+    font-size: 2.9rem;
+  }
+  .hero-2-title {
+    font-size: 2.6rem;
+  }
+  .section-title {
+    font-size: 2.2rem;
+  }
+  .hero-2-main-img {
+    height: 420px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar-brand img {
+    height: 38px;
+  }
+  .main-navbar .navbar-nav {
+    gap: 1px;
+  }
+  .main-navbar .navbar-nav .nav-link {
+    padding: 6px 7px !important;
+    font-size: 0.84rem;
+  }
+  .navbar-nav .nav-link::after {
+    left: 7px;
+    right: 7px;
+    bottom: 2px;
+  }
+  .navbar-actions {
+    gap: 6px !important;
+  }
+  .btn-dir-toggle {
+    padding: 3px 7px;
+    font-size: 0.7rem;
+    min-width: 36px;
+    height: 26px;
+  }
+  .theme-toggle-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 0.9rem;
+  }
+  .navbar-actions .btn-gold {
+    height: 34px;
+    padding: 0 12px !important;
+    font-size: 0.8rem;
+    white-space: nowrap !important;
+    gap: 5px;
+  }
+}
+
+/* Tablets (768px to 991px) */
+@media (max-width: 991.98px) {
+  .hero-section-1 {
+    min-height: auto;
+    padding: 80px 0 60px;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-text {
+    font-size: 1.05rem;
+  }
+  .hero-stats-bar {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+  }
+  .hero-showcase-wrapper {
+    margin-top: 30px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-showcase-img {
+    height: 320px;
+  }
+  .hero-badge-top {
+    top: 14px;
+    right: 10px;
+    padding: 8px 14px;
+  }
+  .hero-badge-bottom {
+    bottom: 14px;
+    left: 10px;
+    padding: 8px 14px;
+  }
+  .hero-card-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 1.05rem;
+  }
+  .hero-card-title {
+    font-size: 0.92rem;
+  }
+  .hero-card-subtitle {
+    font-size: 0.7rem;
+  }
+  .hero-pill-tag {
+    bottom: -12px;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
+  .hero-2-img-wrapper {
+    margin-top: 40px;
+  }
+  .hero-2-main-img {
+    height: 380px;
+  }
+
+  .about-img-box {
+    margin-bottom: 40px;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .about-main-img {
+    height: 380px;
+  }
+  .about-exp-badge {
+    position: relative;
+    margin-top: -30px;
+    margin-right: 20px;
+    display: inline-block;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .lightbox-prev {
+    left: 10px;
+  }
+  .lightbox-next {
+    right: 10px;
+  }
+  .lightbox-close {
+    top: -40px;
+    right: 10px;
+  }
+
+  /* Mobile Navbar */
+  .navbar-collapse {
+    background: #FFFFFF;
+    padding: 15px 20px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    margin-top: 12px;
+    border: 1px solid var(--color-border-gold);
+  }
+  .navbar-nav .nav-link {
+    padding: 10px 0 !important;
+  }
+  .navbar-nav .nav-link::after {
+    left: 0;
+    right: 0;
+  }
+  .dropdown-menu {
+    border: none;
+    box-shadow: none;
+    padding-left: 15px;
+    margin-top: 0;
+    background: var(--color-cream-light);
+  }
+
+  /* Mobile Navbar Action Controls & Direction Toggle */
+  .navbar-actions {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    margin-top: 14px;
+    border-top: 1px dashed var(--color-border);
+    gap: 12px;
+  }
+  .dir-toggle-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-actions .btn-gold {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* Small Tablets and Mobile Landscapes (576px to 767px) */
+@media (max-width: 767.98px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .announcement-bar {
+    text-align: center;
+  }
+  .announcement-bar .topbar-info {
+    justify-content: center;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+  .announcement-bar .topbar-social {
+    justify-content: center;
+    margin-top: 4px;
+  }
+
+  .section-title {
+    font-size: 1.95rem;
+  }
+  .hero-title {
+    font-size: 2.1rem;
+  }
+  .page-banner {
+    padding: 50px 0;
+  }
+  .page-banner h1 {
+    font-size: 2.1rem;
+  }
+
+  .btn-gold,
+  .btn-maroon,
+  .btn-outline-gold,
+  .btn-outline-light-custom {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .hero-btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .error-code {
+    font-size: 5.5rem;
+  }
+
+  .form-card {
+    padding: 24px 18px;
+  }
+}
+
+/* Small Mobile Screens (320px to 575px) */
+@media (max-width: 575.98px) {
+  body {
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 1.7rem;
+  }
+  .hero-title {
+    font-size: 1.85rem;
+  }
+  .hero-text {
+    font-size: 0.95rem;
+  }
+  .hero-showcase-img {
+    height: 240px;
+  }
+  .hero-floating-card {
+    padding: 6px 10px;
+    gap: 8px;
+  }
+  .hero-card-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+  .hero-card-title {
+    font-size: 0.82rem;
+  }
+  .hero-card-subtitle {
+    font-size: 0.65rem;
+  }
+  .hero-stars {
+    font-size: 0.72rem;
+  }
+  .hero-badge-top {
+    top: 8px;
+    right: 8px;
+  }
+  .hero-badge-bottom {
+    bottom: 8px;
+    left: 8px;
+  }
+  .hero-pill-tag {
+    font-size: 0.68rem;
+    padding: 4px 10px;
+  }
+  .stat-item h3 {
+    font-size: 1.8rem;
+  }
+  .stat-item p {
+    font-size: 0.75rem;
+  }
+  .about-main-img {
+    height: 280px;
+  }
+  .hero-2-main-img {
+    height: 280px;
+  }
+  .service-main-image {
+    height: 260px;
+  }
+  .blog-featured-img {
+    height: 240px;
+  }
+
+  .countdown-item {
+    min-width: 70px;
+    padding: 12px 8px;
+  }
+  .countdown-number {
+    font-size: 1.9rem;
+  }
+  .countdown-label {
+    font-size: 0.7rem;
+  }
+
+  .pricing-price {
+    font-size: 1.9rem;
+  }
+
+  .gallery-filter-btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+
+  .contact-info-card {
+    padding: 18px;
+  }
+}
+
+/* Tiny Devices (320px) */
+@media (max-width: 350px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  .navbar-brand img {
+    height: 38px;
+  }
+  .countdown-box {
+    gap: 8px;
+  }
+  .countdown-item {
+    min-width: 62px;
+  }
+}

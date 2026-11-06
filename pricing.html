@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing & Packages - UTSAV Stage, Tent & Pandal Contractors</title>
+  <meta name="description" content="Transparent, itemized pricing packages for wedding stages, traditional marriage pandals, outdoor German marquee tents, and festival decor by UTSAV.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg">
+  <link rel="alternate icon" href="assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <script>
+    (function() {
+      try {
+        const savedDir = localStorage.getItem('utsav_direction') || localStorage.getItem('direction') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+        const savedTheme = localStorage.getItem('utsav_theme') || localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body id="top">
+
+  <!-- Main Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top main-navbar" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo/logo.svg" alt="UTSAV Stage & Pandal Contractor Logo">
+        </a>
+        
+        <div class="d-flex align-items-center d-lg-none gap-2">
+          
+          <button class="theme-toggle-btn" id="themeToggleBtnMobile" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-door-fill"></i>Home 1 – Grand Mandap</a></li>
+                <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-gem"></i>Home 2 – Royal Reception</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html"><i class="bi bi-grid-fill"></i>All Services Overview</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="pages/services/wedding-stage.html"><i class="bi bi-flower1"></i>Wedding Stage Decoration</a></li>
+                <li><a class="dropdown-item" href="pages/services/traditional-pandal.html"><i class="bi bi-building"></i>Traditional Marriage Pandal</a></li>
+                <li><a class="dropdown-item" href="pages/services/reception-decoration.html"><i class="bi bi-stars"></i>Reception Decoration</a></li>
+                <li><a class="dropdown-item" href="pages/services/engagement-decoration.html"><i class="bi bi-heart-fill"></i>Engagement Decoration</a></li>
+                <li><a class="dropdown-item" href="pages/services/birthday-decoration.html"><i class="bi bi-balloon-fill"></i>Birthday Party Setup</a></li>
+                <li><a class="dropdown-item" href="pages/services/corporate-events.html"><i class="bi bi-briefcase-fill"></i>Corporate Event Setup</a></li>
+                <li><a class="dropdown-item" href="pages/services/outdoor-events.html"><i class="bi bi-umbrella-fill"></i>Outdoor Event Tents</a></li>
+                <li><a class="dropdown-item" href="pages/services/floral-decoration.html"><i class="bi bi-flower2"></i>Exotic Floral Decoration</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="navbar-actions d-flex align-items-center gap-2 gap-xl-3 ms-lg-3 mt-3 mt-lg-0 flex-wrap flex-lg-nowrap">
+            <div class="dir-toggle-wrapper d-flex align-items-center justify-content-between w-100 w-lg-auto">
+              <span class="dir-toggle-label d-lg-none text-muted small fw-semibold"><i class="bi bi-translate me-1"></i>Direction:</span>
+              <div class="dir-toggle-group" role="group" aria-label="Language Direction">
+                <button type="button" class="btn btn-dir-toggle active" data-dir="ltr" aria-pressed="true" title="Left-to-Right Layout">LTR</button>
+                <button type="button" class="btn btn-dir-toggle" data-dir="rtl" aria-pressed="false" title="Right-to-Left Layout">RTL</button>
+              </div>
+            </div>
+            <button class="theme-toggle-btn d-none d-lg-inline-flex" id="themeToggleBtn" aria-label="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <a href="get-quote.html" class="btn btn-gold w-100 w-lg-auto text-center justify-content-center">
+              <i class="bi bi-clipboard2-check-fill"></i> Get a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECTION 1: Page Banner -->
+  <section class="page-banner" id="page-banner">
+    <div class="container">
+      <h1 class="reveal-fade-up">Decoration Packages & Pricing</h1>
+      <p class="reveal-fade-up delay-100">
+        Clear, upfront event packages designed to suit intimate celebrations, traditional pandals, and luxury weddings.
+      </p>
+      <nav aria-label="breadcrumb" class="reveal-fade-up delay-200">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Pricing</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Pricing Introduction -->
+  <section class="section-padding bg-white" id="pricing-intro">
+    <div class="container">
+      <div class="text-center reveal-fade-up mb-5">
+        <span class="section-subtitle">Fair & Transparent Rates</span>
+        <h2 class="section-title">Honest Pricing With <span>Zero Hidden Costs</span></h2>
+        <div class="divider-ornament"><i class="bi bi-cash-stack"></i></div>
+        <p class="section-description">
+          Every UTSAV contract includes transportation within city limits, professional rigging crew, live electrical standby, and post-event cleanup.
+        </p>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-md-3 col-6 reveal-fade-up">
+          <div class="pricing-summary-card p-4 rounded-4 border bg-light h-100">
+            <h5 class="fw-bold mb-1">Basic (Silver)</h5>
+            <p class="text-muted small mb-2">Engagements & Birthdays</p>
+            <h3 class="text-danger fw-bold mb-0">₹35,000</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 reveal-fade-up delay-100">
+          <div class="pricing-summary-card p-4 rounded-4 border bg-light h-100">
+            <h5 class="fw-bold mb-1">Standard (Gold)</h5>
+            <p class="text-muted small mb-2">Traditional Mandaps</p>
+            <h3 class="text-danger fw-bold mb-0">₹75,000</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 reveal-fade-up delay-200">
+          <div class="pricing-summary-card p-4 rounded-4 border border-warning bg-light h-100 shadow-sm">
+            <h5 class="fw-bold mb-1">Premium (Royal)</h5>
+            <p class="text-muted small mb-2">Grand Weddings & Stages</p>
+            <h3 class="text-danger fw-bold mb-0">₹1,50,000</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 reveal-fade-up delay-300">
+          <div class="pricing-summary-card p-4 rounded-4 border bg-light h-100">
+            <h5 class="fw-bold mb-1">Custom (Palace)</h5>
+            <p class="text-muted small mb-2">Multi-Day & Marquee Arenas</p>
+            <h3 class="text-danger fw-bold mb-0">Custom</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Basic Package -->
+  <section class="section-padding" style="background: var(--color-cream);" id="basic-package">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 reveal-fade-right">
+          <img src="assets/images/gallery/engagement/engagement-1.jpg" alt="Basic Package Setup" class="img-fluid rounded-4 shadow-lg border border-3 border-secondary" style="height: 380px; width: 100%; object-fit: cover;">
+        </div>
+
+        <div class="col-lg-7 reveal-fade-left">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge bg-secondary px-3 py-2 rounded-pill fw-bold">PACKAGE 01</span>
+            <span class="display-6 fw-bold text-danger">₹35,000 <small class="fs-6 text-muted">/ event</small></span>
+          </div>
+          <h2 class="section-title mb-2">Basic Package <span>(Silver Tier)</span></h2>
+          <p class="text-muted mb-4">
+            Designed for intimate celebrations, ring ceremonies, housewarmings, naming ceremonies, and small family gatherings up to 200 guests.
+          </p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <ul class="list-unstyled text-muted small mb-0">
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> 16 x 10 ft Elevated Stage Platform</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Pleated Satin & Chiffon Drapery</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Fresh Floral Border Garland Hangings</li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul class="list-unstyled text-muted small mb-0">
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> 2 Royal Velvet Couple Chairs</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> 4 Warm LED Ambient Spotlights</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Entrance Welcome Arch with Flowers</li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="get-quote.html?package=basic" class="btn btn-outline-dark">
+            <i class="bi bi-calendar2-check-fill"></i> Select Basic Package
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Standard Package -->
+  <section class="section-padding bg-white" id="standard-package">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 order-lg-1 reveal-fade-right">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold">PACKAGE 02</span>
+            <span class="display-6 fw-bold text-danger">₹75,000 <small class="fs-6 text-muted">/ event</small></span>
+          </div>
+          <h2 class="section-title mb-2">Standard Package <span>(Gold Mandap Tier)</span></h2>
+          <p class="text-muted mb-4">
+            The traditional wedding classic. Perfect for marriage halls, community banquets, and reception evenings hosting 300 to 800 guests.
+          </p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <ul class="list-unstyled text-muted small mb-0">
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> 24 x 14 ft Carved Pillar Mandap Setup</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> 100% Fresh Farm Jasmine & Rose Hangings</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Maharaja Bride & Groom Velvet Sofa</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Sacred Havan Pit with Base Plate</li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul class="list-unstyled text-muted small mb-0">
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Grand 30-ft Entrance Floral Arch</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> 8 Pathway Floral Stands & Red Carpet</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> 12 LED High-CRI Wash Light Fixtures</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Standby Electrician throughout Rituals</li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="get-quote.html?package=standard" class="btn btn-maroon">
+            <i class="bi bi-calendar2-check-fill"></i> Select Standard Package
+          </a>
+        </div>
+
+        <div class="col-lg-5 order-lg-2 reveal-fade-left">
+          <img src="assets/images/gallery/wedding-stage/stage-1.jpg" alt="Standard Package Setup" class="img-fluid rounded-4 shadow-lg border border-3 border-warning" style="height: 380px; width: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Premium Package -->
+  <section class="section-padding" style="background: var(--color-cream);" id="premium-package">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 reveal-fade-right">
+          <img src="assets/images/gallery/reception/reception-1.jpg" alt="Premium Royal Palace Package Setup" class="img-fluid rounded-4 shadow-lg border border-3 border-danger" style="height: 400px; width: 100%; object-fit: cover;">
+        </div>
+
+        <div class="col-lg-7 reveal-fade-left">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge bg-danger px-3 py-2 rounded-pill fw-bold">MOST POPULAR LUXURY</span>
+            <span class="display-6 fw-bold text-danger">₹1,50,000 <small class="fs-6 text-muted">/ event</small></span>
+          </div>
+          <h2 class="section-title mb-2">Premium Package <span>(Royal Palace Tier)</span></h2>
+          <p class="text-muted mb-4">
+            A majestic, multi-tiered visual spectacle designed for luxury banquet halls, palace grounds, and high-profile marriages of 800 to 2,000+ guests.
+          </p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <ul class="list-unstyled text-muted small mb-0">
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> 40 x 20 ft Multi-Tiered Crystal Stage</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Exotic Orchid, Peony & Hydrangea Ceilings</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Cascading K9 Crystal Chandeliers</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Reflective High-Gloss Mirror Runway</li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul class="list-unstyled text-muted small mb-0">
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> 50-ft Grand Royal Entryway Gateway</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Moving Sharp Beam Lights & Low Haze Fog</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Dining Hall Thematic Draping & Chair Ties</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Senior Site Project Manager on Duty</li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="get-quote.html?package=premium" class="btn btn-gold">
+            <i class="bi bi-calendar2-check-fill"></i> Select Premium Package
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: Custom Package -->
+  <section class="section-padding bg-white" id="custom-package">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 order-lg-1 reveal-fade-right">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge bg-dark px-3 py-2 rounded-pill fw-bold">BESPOKE ARCHITECTURE</span>
+            <span class="display-6 fw-bold text-danger">Custom Quote</span>
+          </div>
+          <h2 class="section-title mb-2">Custom Package <span>(Bespoke Mega Events)</span></h2>
+          <p class="text-muted mb-4">
+            For destination weddings, stadium conventions, multi-day cultural festivals, and open-lawn events requiring German marquee tents, industrial AC ducting, and massive truss structures.
+          </p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <ul class="list-unstyled text-muted small mb-0">
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Clear-Span German Aluminum Marquees</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Heavy Tongue-and-Groove Wooden Lawn Subfloors</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> High-Resolution P3 LED Video Walls</li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul class="list-unstyled text-muted small mb-0">
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Industrial Packaged AC Units & Misting Fans</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> 125 kVA Silent Generator Backup Fleet</li>
+                <li class="py-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Turnkey Multi-Day Event Management</li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="get-quote.html?package=custom" class="btn btn-outline-gold">
+            <i class="bi bi-chat-square-quote-fill"></i> Request Custom Engineering Quote
+          </a>
+        </div>
+
+        <div class="col-lg-5 order-lg-2 reveal-fade-left">
+          <img src="assets/images/gallery/outdoor-events/outdoor-1.jpg" alt="Custom Package German Marquee" class="img-fluid rounded-4 shadow-lg border border-3 border-dark" style="height: 380px; width: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: Package Comparison Table -->
+  <section class="section-padding" style="background: var(--color-cream);" id="package-comparison">
+    <div class="container">
+      <div class="text-center reveal-fade-up mb-5">
+        <span class="section-subtitle">Side-by-Side Review</span>
+        <h2 class="section-title">Package <span>Comparison Matrix</span></h2>
+        <div class="divider-ornament"><i class="bi bi-table"></i></div>
+        <p class="section-description">
+          Compare key features and inclusions across our four primary staging tiers to choose the perfect fit.
+        </p>
+      </div>
+
+      <div class="table-responsive rounded-4 shadow-sm bg-white p-3 reveal-fade-up">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th scope="col" style="width: 28%;">Feature Inclusions</th>
+              <th scope="col" class="text-center" style="width: 18%;">Basic (₹35k)</th>
+              <th scope="col" class="text-center" style="width: 18%;">Standard (₹75k)</th>
+              <th scope="col" class="text-center table-warning" style="width: 18%;">Premium (₹1.5L)</th>
+              <th scope="col" class="text-center" style="width: 18%;">Custom</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Stage Dimensions</strong></td>
+              <td class="text-center">16 x 10 ft</td>
+              <td class="text-center">24 x 14 ft</td>
+              <td class="text-center table-warning">40 x 20 ft</td>
+              <td class="text-center">Tailored (Up to 120ft)</td>
+            </tr>
+            <tr>
+              <td><strong>Mandap Pillars / Arch</strong></td>
+              <td class="text-center">Draped Backdrop</td>
+              <td class="text-center">Hand-Carved Wood Pillars</td>
+              <td class="text-center table-warning">Multi-Tier Royal Architecture</td>
+              <td class="text-center">Architectural Fiberglass/Steel</td>
+            </tr>
+            <tr>
+              <td><strong>Fresh Flowers</strong></td>
+              <td class="text-center">Border Garlands</td>
+              <td class="text-center">Dense Rose & Jasmine Hangings</td>
+              <td class="text-center table-warning">100% Exotic Blooms & Dome</td>
+              <td class="text-center">International Floral Stylist</td>
+            </tr>
+            <tr>
+              <td><strong>Couple Seating</strong></td>
+              <td class="text-center">2 Velvet Chairs</td>
+              <td class="text-center">Royal Maharaja Sofa</td>
+              <td class="text-center table-warning">Antique Gold Carved Throne</td>
+              <td class="text-center">Custom Designer Furniture</td>
+            </tr>
+            <tr>
+              <td><strong>Illumination & Rigging</strong></td>
+              <td class="text-center">4 LED Spotlights</td>
+              <td class="text-center">12 Warm LED Wash Lights</td>
+              <td class="text-center table-warning">DMX Moving Heads & Chandeliers</td>
+              <td class="text-center">Concert Grade Box Truss System</td>
+            </tr>
+            <tr>
+              <td><strong>Mirror Runway Ramp</strong></td>
+              <td class="text-center text-muted"><i class="bi bi-x-lg text-danger"></i></td>
+              <td class="text-center text-muted"><i class="bi bi-x-lg text-danger"></i></td>
+              <td class="text-center table-warning"><i class="bi bi-check2-circle text-success fs-5"></i></td>
+              <td class="text-center"><i class="bi bi-check2-circle text-success fs-5"></i></td>
+            </tr>
+            <tr>
+              <td><strong>Entrance Welcome Gateway</strong></td>
+              <td class="text-center">Simple Arch</td>
+              <td class="text-center">30-ft Decorated Gateway</td>
+              <td class="text-center table-warning">50-ft Grand Royal Palace Gateway</td>
+              <td class="text-center">Full Facade Thematic Entry</td>
+            </tr>
+            <tr>
+              <td><strong>German Marquee Tent</strong></td>
+              <td class="text-center text-muted"><i class="bi bi-x-lg text-danger"></i></td>
+              <td class="text-center text-muted"><i class="bi bi-x-lg text-danger"></i></td>
+              <td class="text-center table-warning text-muted">Optional Add-on</td>
+              <td class="text-center"><i class="bi bi-check2-circle text-success fs-5"></i> Included</td>
+            </tr>
+            <tr>
+              <td><strong>On-Site Technician</strong></td>
+              <td class="text-center"><i class="bi bi-check2 text-success"></i> 1 Handover Tech</td>
+              <td class="text-center"><i class="bi bi-check2 text-success"></i> Standby Electrician</td>
+              <td class="text-center table-warning"><i class="bi bi-check2 text-success"></i> Dedicated Project Manager</td>
+              <td class="text-center"><i class="bi bi-check2 text-success"></i> 24/7 Full Crew Team</td>
+            </tr>
+            <tr>
+              <td><strong>Handover Timing</strong></td>
+              <td class="text-center">3 Hrs Before</td>
+              <td class="text-center">4-5 Hrs Before</td>
+              <td class="text-center table-warning">6 Hrs Before</td>
+              <td class="text-center">12 Hrs Prior to Rehearsal</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: Frequently Asked Questions -->
+  <section class="section-padding bg-white" id="pricing-faq">
+    <div class="container">
+      <div class="text-center reveal-fade-up mb-5">
+        <span class="section-subtitle">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked <span>Pricing Questions</span></h2>
+        <div class="divider-ornament"><i class="bi bi-question-circle-fill"></i></div>
+        <p class="section-description">
+          Everything you need to know about deposits, cancellations, customizations, and equipment safety.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion" id="pricingAccordion">
+            <div class="accordion-item border rounded-3 mb-3">
+              <h2 class="accordion-header" id="faqHeading1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                  Are transportation and labor costs included in the package price?
+                </button>
+              </h2>
+              <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#pricingAccordion">
+                <div class="accordion-body text-muted">
+                  Yes, for all events within our primary operational metro area (Chennai and surrounding 40 km radius), transportation of equipment, complete erection, on-site supervision, and post-event dismantling are 100% included in the package price. For outstation venues, only nominal diesel transport at actuals is added.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border rounded-3 mb-3">
+              <h2 class="accordion-header" id="faqHeading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                  What is the payment schedule and booking advance?
+                </button>
+              </h2>
+              <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#pricingAccordion">
+                <div class="accordion-body text-muted">
+                  To block your auspicious event date on our master calendar, an advance deposit of 25% is required upon contract signing. A second milestone payment of 50% is due 7 days prior to the event during material loading, and the remaining 25% balance is settled upon final lighting handover on event day.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border rounded-3 mb-3">
+              <h2 class="accordion-header" id="faqHeading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                  Can we customize floral colors and backdrop elements within a package?
+                </button>
+              </h2>
+              <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#pricingAccordion">
+                <div class="accordion-body text-muted">
+                  Absolutely! All packages offer full customization of floral palettes (e.g., traditional yellow/orange marigolds or pastel pink/white roses) and drapery shades to harmonize with your wedding attire and theme. We provide 3D digital concept mockups to ensure complete visual alignment.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border rounded-3 mb-3">
+              <h2 class="accordion-header" id="faqHeading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                  What happens in the event of unexpected rain or wind?
+                </button>
+              </h2>
+              <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#pricingAccordion">
+                <div class="accordion-body text-muted">
+                  All UTSAV outdoor marquee tents and pandals are engineered and anchored to withstand up to 100 km/h winds and torrential monsoon rains. We utilize heavy-duty waterproof PVC sheets, raised timber subfloors, and perimeter rain trenches to guarantee your celebration remains completely dry and comfortable.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: CTA -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box reveal-fade-up">
+        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">GET YOUR ESTIMATE TODAY</span>
+        <h2>Need a Custom Quote for <span>Your Special Date?</span></h2>
+        <p>
+          Fill out our event requirements form to receive an all-inclusive, itemized proposal within 24 hours.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="get-quote.html" class="btn btn-gold btn-lg">
+            <i class="bi bi-clipboard2-check-fill"></i> Get a Free Estimate
+          </a>
+          <a href="contact.html" class="btn btn-outline-light-custom btn-lg">
+            <i class="bi bi-telephone-fill"></i> Speak With an Estimator
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Footer -->
+  
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="galleryLightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close Lightbox"><i class="bi bi-x-lg"></i></button>
+      <button class="lightbox-prev" aria-label="Previous Image"><i class="bi bi-chevron-left"></i></button>
+      <button class="lightbox-next" aria-label="Next Image"><i class="bi bi-chevron-right"></i></button>
+      <img src="assets/images/gallery/wedding-stage/stage-1.jpg" alt="Preview Image">
+      <div class="lightbox-caption">
+        <h4>Wedding Stage Decoration</h4>
+        <p>Premium Event Collection</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  
+
+  <!-- JavaScript Files -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/footer.js"></script>
+</body>
+</html>

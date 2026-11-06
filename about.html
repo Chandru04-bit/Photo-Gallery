@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - UTSAV Stage, Tent & Pandal Contractors</title>
+  <meta name="description" content="Discover UTSAV's 18+ years of heritage crafting magnificent wedding stages, traditional marriage pandals, and outdoor marquee tents. Meet our master artisans.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg">
+  <link rel="alternate icon" href="assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <script>
+    (function() {
+      try {
+        const savedDir = localStorage.getItem('utsav_direction') || localStorage.getItem('direction') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+        const savedTheme = localStorage.getItem('utsav_theme') || localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body id="top">
+
+  <!-- Main Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top main-navbar" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo/logo.svg" alt="UTSAV Stage & Pandal Contractor Logo">
+        </a>
+        
+        <div class="d-flex align-items-center d-lg-none gap-2">
+          
+          <button class="theme-toggle-btn" id="themeToggleBtnMobile" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-door-fill"></i>Home 1 – Grand Mandap</a></li>
+                <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-gem"></i>Home 2 – Royal Reception</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html"><i class="bi bi-grid-fill"></i>All Services Overview</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="pages/services/wedding-stage.html"><i class="bi bi-flower1"></i>Wedding Stage Decoration</a></li>
+                <li><a class="dropdown-item" href="pages/services/traditional-pandal.html"><i class="bi bi-building"></i>Traditional Marriage Pandal</a></li>
+                <li><a class="dropdown-item" href="pages/services/reception-decoration.html"><i class="bi bi-stars"></i>Reception Decoration</a></li>
+                <li><a class="dropdown-item" href="pages/services/engagement-decoration.html"><i class="bi bi-heart-fill"></i>Engagement Decoration</a></li>
+                <li><a class="dropdown-item" href="pages/services/birthday-decoration.html"><i class="bi bi-balloon-fill"></i>Birthday Party Setup</a></li>
+                <li><a class="dropdown-item" href="pages/services/corporate-events.html"><i class="bi bi-briefcase-fill"></i>Corporate Event Setup</a></li>
+                <li><a class="dropdown-item" href="pages/services/outdoor-events.html"><i class="bi bi-umbrella-fill"></i>Outdoor Event Tents</a></li>
+                <li><a class="dropdown-item" href="pages/services/floral-decoration.html"><i class="bi bi-flower2"></i>Exotic Floral Decoration</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="navbar-actions d-flex align-items-center gap-2 gap-xl-3 ms-lg-3 mt-3 mt-lg-0 flex-wrap flex-lg-nowrap">
+            <div class="dir-toggle-wrapper d-flex align-items-center justify-content-between w-100 w-lg-auto">
+              <span class="dir-toggle-label d-lg-none text-muted small fw-semibold"><i class="bi bi-translate me-1"></i>Direction:</span>
+              <div class="dir-toggle-group" role="group" aria-label="Language Direction">
+                <button type="button" class="btn btn-dir-toggle active" data-dir="ltr" aria-pressed="true" title="Left-to-Right Layout">LTR</button>
+                <button type="button" class="btn btn-dir-toggle" data-dir="rtl" aria-pressed="false" title="Right-to-Left Layout">RTL</button>
+              </div>
+            </div>
+            <button class="theme-toggle-btn d-none d-lg-inline-flex" id="themeToggleBtn" aria-label="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <a href="get-quote.html" class="btn btn-gold w-100 w-lg-auto text-center justify-content-center">
+              <i class="bi bi-clipboard2-check-fill"></i> Get a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECTION 1: Page Banner -->
+  <section class="page-banner" id="page-banner">
+    <div class="container">
+      <h1 class="reveal-fade-up">About UTSAV Contractors</h1>
+      <p class="reveal-fade-up delay-100">
+        Crafting magnificent spaces, majestic mandaps, and all-weather event structures with timeless artistry.
+      </p>
+      <nav aria-label="breadcrumb" class="reveal-fade-up delay-200">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">About Us</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Company Introduction -->
+  <section class="section-padding bg-white" id="intro">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-fade-right">
+          <div class="position-relative">
+            <img src="assets/images/about/about-main.jpg" alt="UTSAV Event Architecture Company" class="img-fluid rounded-4 shadow-lg border border-3 border-warning" style="height: 480px; width: 100%; object-fit: cover;">
+            <div class="position-absolute bottom-0 start-0 m-4 p-4 rounded-3 text-white shadow" style="background: rgba(91, 20, 37, 0.95); border-left: 4px solid var(--color-gold); max-width: 340px;">
+              <h5 class="text-warning mb-1"><i class="bi bi-patch-check-fill"></i> Premier Event Decor</h5>
+              <p class="text-white small mb-0">Transforming bare venues into regal palaces with authentic Indian cultural craftsmanship.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal-fade-left">
+          <span class="section-subtitle">Who We Are</span>
+          <h2 class="section-title">South India's Most Trusted <span>Stage & Tent Contractor</span></h2>
+          <div class="divider-ornament" style="justify-content: flex-start;"><i class="bi bi-flower1"></i></div>
+          <p class="text-muted leading-relaxed">
+            UTSAV Stage, Tent & Pandal Contractors is a full-service event infrastructure company. We specialize in designing and constructing wedding stages, traditional marriage pandals, reception sets, and German marquee canopies for high-profile weddings, cultural festivals, and corporate gatherings.
+          </p>
+          <p class="text-muted leading-relaxed">
+            With our own dedicated fleet of transport trucks, over 150,000 square feet of German aluminum tents, and an in-house carpentry and floral studio, we execute grand-scale celebrations with uncompromised precision, safety, and aesthetic beauty.
+          </p>
+          <div class="row g-3 pt-2">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+                <span class="fw-semibold">100% In-House Inventory</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+                <span class="fw-semibold">Certified Safety Standards</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+                <span class="fw-semibold">Direct Fresh Blooms Daily</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+                <span class="fw-semibold">On-Time Handover Guarantee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Our Story -->
+  <section class="section-padding" style="background: var(--color-cream);" id="story">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-2 reveal-fade-left">
+          <div class="position-relative">
+            <img src="assets/images/about/about-experience.jpg" alt="UTSAV Wedding Setup Heritage" class="rounded-4 shadow-lg w-100" style="height: 480px; object-fit: cover; border: 3px solid var(--color-gold);">
+            <div class="position-absolute bottom-0 start-0 m-4 p-4 rounded-3 text-white shadow" style="background: rgba(91, 20, 37, 0.95); border-left: 4px solid var(--color-gold); max-width: 320px;">
+              <h5 class="text-warning mb-1">Authentic Craftsmanship</h5>
+              <p class="text-white small mb-0">Handcrafted floral garlands, traditional brass lamps, and certified German tent canopies.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 order-lg-1 reveal-fade-right">
+          <span class="section-subtitle">Our Heritage</span>
+          <h2 class="section-title">Celebrating 18+ Years of <span>Event Artistry</span></h2>
+          <div class="divider-ornament" style="margin: 0.5rem 0 1.25rem; justify-content: flex-start;"><i class="bi bi-hourglass-split"></i></div>
+          <p class="text-muted leading-relaxed">
+            UTSAV began in 2008 with a simple yet ambitious vision: to elevate traditional Indian celebrations into regal, unforgettable visual spectacles without compromising structural safety or cultural authenticity.
+          </p>
+          <p class="text-muted leading-relaxed">
+            Over the past two decades, what started as a family-run artisan workshop in Chennai has expanded into an industry-leading event infrastructure firm operating across Tamil Nadu, Karnataka, Andhra Pradesh, and Telangana. We have had the honor of decorating over 2,800 weddings, receptions, and public festivals.
+          </p>
+          <p class="text-muted leading-relaxed">
+            From high-profile celebrity destination weddings to reverent temple festivals and multi-day corporate conferences, our master riggers and decor designers bring the same unyielding dedication to perfection.
+          </p>
+          <a href="gallery.html" class="btn btn-maroon mt-2">
+            <i class="bi bi-images"></i> Explore Our Historical Portfolio
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Mission and Vision -->
+  <section class="section-padding bg-white" id="mission-vision">
+    <div class="container">
+      <div class="text-center reveal-fade-up mb-5">
+        <span class="section-subtitle">Guiding Principles</span>
+        <h2 class="section-title">Our Mission & <span>Vision</span></h2>
+        <div class="divider-ornament"><i class="bi bi-compass-fill"></i></div>
+        <p class="section-description">
+          Built on pillars of cultural authenticity, structural durability, and artistic innovation.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6 reveal-fade-up">
+          <div class="p-5 bg-white rounded-4 shadow-sm border h-100" style="border-top: 5px solid var(--color-maroon) !important;">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="p-3 rounded-circle" style="background: var(--color-cream); color: var(--color-maroon);">
+                <i class="bi bi-compass-fill fs-2"></i>
+              </div>
+              <h3 class="mb-0 fw-bold">Our Mission</h3>
+            </div>
+            <p class="text-muted leading-relaxed mb-3">
+              Our mission is to craft breathtaking, structurally sound, and culturally authentic event spaces that honor Indian traditions while embracing contemporary aesthetic elegance.
+            </p>
+            <ul class="list-unstyled text-muted small">
+              <li class="py-1"><i class="bi bi-check2-circle text-warning me-2"></i> Deliver flawless on-time setups 4-6 hours before the muhurtham.</li>
+              <li class="py-1"><i class="bi bi-check2-circle text-warning me-2"></i> Provide 100% transparent pricing without hidden surcharges.</li>
+              <li class="py-1"><i class="bi bi-check2-circle text-warning me-2"></i> Guarantee wind-resistant, waterproof structures for complete peace of mind.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal-fade-up delay-100">
+          <div class="p-5 bg-white rounded-4 shadow-sm border h-100" style="border-top: 5px solid var(--color-gold) !important;">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="p-3 rounded-circle" style="background: var(--color-cream); color: var(--color-gold-dark);">
+                <i class="bi bi-eye-fill fs-2"></i>
+              </div>
+              <h3 class="mb-0 fw-bold">Our Vision</h3>
+            </div>
+            <p class="text-muted leading-relaxed mb-3">
+              Our vision is to be the premier stage, tent, and pandal contracting powerhouse across India, renowned for architectural innovation, turnkey reliability, sustainable floral practices, and celebratory magic.
+            </p>
+            <ul class="list-unstyled text-muted small">
+              <li class="py-1"><i class="bi bi-check2-circle text-warning me-2"></i> Pioneer eco-friendly bio-degradable floral and fabric recycling.</li>
+              <li class="py-1"><i class="bi bi-check2-circle text-warning me-2"></i> Integrate cutting-edge 3D interactive holographic walkthroughs.</li>
+              <li class="py-1"><i class="bi bi-check2-circle text-warning me-2"></i> Maintain the gold standard in crowd and structural event safety.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Our Experience and Achievements -->
+  <section class="section-padding text-white" style="background: var(--color-maroon-dark); border-top: 3px solid var(--color-gold); border-bottom: 3px solid var(--color-gold);" id="achievements">
+    <div class="container">
+      <div class="text-center reveal-fade-up mb-5">
+        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-2">KEY MILESTONES</span>
+        <h2 class="text-white">Our Proud <span>Milestones & Achievements</span></h2>
+        <div class="divider-ornament"><i class="bi bi-award-fill"></i></div>
+        <p class="text-white max-w-600 mx-auto">
+          A track record forged through thousands of successful wedding rituals, corporate summits, and cultural celebrations.
+        </p>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-md-3 col-6 reveal-fade-up">
+          <div class="p-4 rounded-4 bg-dark bg-opacity-25 border border-secondary border-opacity-25 h-100">
+            <h2 class="display-4 fw-bold text-warning counter-value" data-target="2800" data-suffix="+">0+</h2>
+            <p class="text-white text-uppercase letter-spacing-1 small mb-0">Weddings & Pandal Setups</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 reveal-fade-up delay-100">
+          <div class="p-4 rounded-4 bg-dark bg-opacity-25 border border-secondary border-opacity-25 h-100">
+            <h2 class="display-4 fw-bold text-warning counter-value" data-target="150000" data-suffix="+">0+</h2>
+            <p class="text-white text-uppercase letter-spacing-1 small mb-0">Sq. Ft German Tents in Stock</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 reveal-fade-up delay-200">
+          <div class="p-4 rounded-4 bg-dark bg-opacity-25 border border-secondary border-opacity-25 h-100">
+            <h2 class="display-4 fw-bold text-warning counter-value" data-target="18" data-suffix="+">0+</h2>
+            <p class="text-white text-uppercase letter-spacing-1 small mb-0">Years Continuous Operations</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 reveal-fade-up delay-300">
+          <div class="p-4 rounded-4 bg-dark bg-opacity-25 border border-secondary border-opacity-25 h-100">
+            <h2 class="display-4 fw-bold text-warning counter-value" data-target="100" data-suffix="%">0%</h2>
+            <p class="text-white text-uppercase letter-spacing-1 small mb-0">Punctual Handover Rate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: Our Professional Team -->
+  <section class="section-padding bg-white" id="team">
+    <div class="container">
+      <div class="text-center reveal-fade-up mb-5">
+        <span class="section-subtitle">Leadership & Craft</span>
+        <h2 class="section-title">Meet Our <span>Master Craftsmen</span></h2>
+        <div class="divider-ornament"><i class="bi bi-people-fill"></i></div>
+        <p class="section-description">
+          The visionary minds, senior structural riggers, and floral artists dedicated to perfecting your special day.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Team 1 -->
+        <div class="col-lg-3 col-md-6 reveal-fade-up">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100">
+            <img src="assets/images/about/team-1.jpg" alt="Ramanathan Iyer" class="card-img-top" style="height: 280px; object-fit: cover;">
+            <div class="card-body p-4">
+              <h5 class="card-title mb-1 fw-bold">Ramanathan Iyer</h5>
+              <span class="badge bg-danger mb-3">Founder & Chief Architect</span>
+              <p class="card-text text-muted small">
+                30+ years in traditional temple architecture, wood carving, and classical South Indian mandap engineering.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team 2 -->
+        <div class="col-lg-3 col-md-6 reveal-fade-up delay-100">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100">
+            <img src="assets/images/about/team-2.jpg" alt="Meera Sundaram" class="card-img-top" style="height: 280px; object-fit: cover;">
+            <div class="card-body p-4">
+              <h5 class="card-title mb-1 fw-bold">Meera Sundaram</h5>
+              <span class="badge bg-warning text-dark mb-3">Head of Floral Art & Styling</span>
+              <p class="card-text text-muted small">
+                Trained in European floral installations and Indian temple garland artistry with 14 years of design excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team 3 -->
+        <div class="col-lg-3 col-md-6 reveal-fade-up delay-200">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100">
+            <img src="assets/images/about/team-3.jpg" alt="Rajeshwar Varma" class="card-img-top" style="height: 280px; object-fit: cover;">
+            <div class="card-body p-4">
+              <h5 class="card-title mb-1 fw-bold">Rajeshwar Varma</h5>
+              <span class="badge bg-secondary mb-3">Director of Structural Rigging</span>
+              <p class="card-text text-muted small">
+                Certified mechanical structural expert overseeing all-weather German aluminum tents and stadium load tests.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team 4 -->
+        <div class="col-lg-3 col-md-6 reveal-fade-up delay-300">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100">
+            <img src="assets/images/about/team-4.jpg" alt="Deepa Kulkarni" class="card-img-top" style="height: 280px; object-fit: cover;">
+            <div class="card-body p-4">
+              <h5 class="card-title mb-1 fw-bold">Deepa Kulkarni</h5>
+              <span class="badge bg-success mb-3">Operations & Client Relations</span>
+              <p class="card-text text-muted small">
+                Direct coordinator ensuring timeline adherence, on-site supervision, and client peace of mind throughout setup.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: Why Choose Us -->
+  <section class="section-padding" style="background: var(--color-cream);" id="why-choose">
+    <div class="container">
+      <div class="text-center reveal-fade-up mb-5">
+        <span class="section-subtitle">Our Promise</span>
+        <h2 class="section-title">Why Families & Planners <span>Choose UTSAV</span></h2>
+        <div class="divider-ornament"><i class="bi bi-star-fill"></i></div>
+        <p class="section-description">
+          Six foundational advantages that set our event infrastructure apart from ordinary contractors.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 reveal-fade-up">
+          <div class="p-4 bg-white rounded-4 shadow-sm border h-100">
+            <div class="text-danger mb-3"><i class="bi bi-boxes fs-1"></i></div>
+            <h5 class="fw-bold mb-2">100% In-House Inventory</h5>
+            <p class="text-muted small mb-0">We own every tent truss, mandap pillar, sofa, and light. No middleman delays or surprise cost inflations.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 reveal-fade-up delay-100">
+          <div class="p-4 bg-white rounded-4 shadow-sm border h-100">
+            <div class="text-warning mb-3"><i class="bi bi-shield-check fs-1"></i></div>
+            <h5 class="fw-bold mb-2">Certified Structural Safety</h5>
+            <p class="text-muted small mb-0">Wind-tested German marquee aluminum framing and fire-retardant fabric certifications for total safety.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 reveal-fade-up delay-200">
+          <div class="p-4 bg-white rounded-4 shadow-sm border h-100">
+            <div class="text-success mb-3"><i class="bi bi-flower1 fs-1"></i></div>
+            <h5 class="fw-bold mb-2">Farm-Fresh Blooms Daily</h5>
+            <p class="text-muted small mb-0">Direct procurement from Bengaluru and Nilgiri flower farms guarantees radiant, non-wilting floral displays.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 reveal-fade-up">
+          <div class="p-4 bg-white rounded-4 shadow-sm border h-100">
+            <div class="text-info mb-3"><i class="bi bi-badge-3d fs-1"></i></div>
+            <h5 class="fw-bold mb-2">Interactive 3D Blueprints</h5>
+            <p class="text-muted small mb-0">Preview the exact stage dimensions, lighting wash, and guest seating layout before any fabrication begins.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 reveal-fade-up delay-100">
+          <div class="p-4 bg-white rounded-4 shadow-sm border h-100">
+            <div class="text-primary mb-3"><i class="bi bi-clock-history fs-1"></i></div>
+            <h5 class="fw-bold mb-2">Early Handover Guarantee</h5>
+            <p class="text-muted small mb-0">We complete and test stage lighting 4 to 6 hours before muhurtham time, giving family full tranquility.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 reveal-fade-up delay-200">
+          <div class="p-4 bg-white rounded-4 shadow-sm border h-100">
+            <div class="text-danger mb-3"><i class="bi bi-cash-coin fs-1"></i></div>
+            <h5 class="fw-bold mb-2">Transparent Flat Pricing</h5>
+            <p class="text-muted small mb-0">Comprehensive itemized quotes with clear deliverables, zero hidden generator or transport surcharges.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: Our Work Process -->
+  <section class="section-padding bg-white" id="work-process">
+    <div class="container">
+      <div class="text-center reveal-fade-up mb-5">
+        <span class="section-subtitle">Methodology</span>
+        <h2 class="section-title">Our Seamless <span>Work Process</span></h2>
+        <div class="divider-ornament"><i class="bi bi-arrow-repeat"></i></div>
+        <p class="section-description">
+          From initial consultation to final spotlight testing, our structured timeline guarantees stress-free execution.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg col-md-4 col-sm-6 reveal-fade-up">
+          <div class="process-step-card p-4 rounded-4 border text-center h-100 d-flex flex-column align-items-center">
+            <div class="step-badge mb-3">1</div>
+            <h6 class="fw-bold mb-2">Consultation & Recce</h6>
+            <p class="text-muted small mb-0">Free venue recce, ground leveling assessment, and listening to your theme preferences.</p>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-4 col-sm-6 reveal-fade-up delay-100">
+          <div class="process-step-card p-4 rounded-4 border text-center h-100 d-flex flex-column align-items-center">
+            <div class="step-badge mb-3">2</div>
+            <h6 class="fw-bold mb-2">3D Blueprinting</h6>
+            <p class="text-muted small mb-0">Computerized CAD layout showing stage dimensions, camera angles, and seating paths.</p>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-4 col-sm-6 reveal-fade-up delay-200">
+          <div class="process-step-card p-4 rounded-4 border text-center h-100 d-flex flex-column align-items-center">
+            <div class="step-badge mb-3">3</div>
+            <h6 class="fw-bold mb-2">Material Curation</h6>
+            <p class="text-muted small mb-0">Artisan pillar woodwork, fabric dyeing, and farm fresh flower procurement.</p>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-4 col-sm-6 reveal-fade-up delay-300">
+          <div class="process-step-card p-4 rounded-4 border text-center h-100 d-flex flex-column align-items-center">
+            <div class="step-badge mb-3">4</div>
+            <h6 class="fw-bold mb-2">On-Site Rigging</h6>
+            <p class="text-muted small mb-0">Heavy structural truss erection, waterproof roofing, and floral installations.</p>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-4 col-sm-6 reveal-fade-up delay-400">
+          <div class="process-step-card p-4 rounded-4 border text-center h-100 d-flex flex-column align-items-center">
+            <div class="step-badge mb-3">5</div>
+            <h6 class="fw-bold mb-2">Testing & Handover</h6>
+            <p class="text-muted small mb-0">Spotlight calibration, AC / fan checks, and early client sign-off before guests arrive.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: CTA -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box reveal-fade-up">
+        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">START PLANNING TODAY</span>
+        <h2>Ready to Craft Your <span>Royal Event Experience?</span></h2>
+        <p>
+          Schedule a personalized design session with our senior mandap architects. We'll present custom mockups tailored to your venue and budget.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="get-quote.html" class="btn btn-gold btn-lg">
+            <i class="bi bi-clipboard2-check-fill"></i> Get a Free Quote
+          </a>
+          <a href="contact.html" class="btn btn-outline-light-custom btn-lg">
+            <i class="bi bi-telephone-fill"></i> Contact Our Office
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Footer -->
+  
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="galleryLightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close Lightbox"><i class="bi bi-x-lg"></i></button>
+      <button class="lightbox-prev" aria-label="Previous Image"><i class="bi bi-chevron-left"></i></button>
+      <button class="lightbox-next" aria-label="Next Image"><i class="bi bi-chevron-right"></i></button>
+      <img src="assets/images/gallery/wedding-stage/stage-1.jpg" alt="Preview Image">
+      <div class="lightbox-caption">
+        <h4>Wedding Stage Decoration</h4>
+        <p>Premium Event Collection</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  
+
+  <!-- JavaScript Files -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/footer.js"></script>
+</body>
+</html>

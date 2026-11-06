@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF4DC"/>
+      <stop offset="45%" stop-color="#C6A15B"/>
+      <stop offset="100%" stop-color="#8E6A26"/>
+    </linearGradient>
+    <linearGradient id="favMaroon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6F152B"/>
+      <stop offset="100%" stop-color="#3D0B17"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#favMaroon)"/>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="13.5" fill="none" stroke="url(#favGold)" stroke-width="2"/>
+  
+  <!-- Royal Mandap Arch Icon -->
+  <path d="M32 9 C34 16, 49 22, 49 35 C49 46, 42 51, 32 51 C22 51, 15 46, 15 35 C15 22, 30 16, 32 9 Z" fill="none" stroke="url(#favGold)" stroke-width="2.2"/>
+  <path d="M32 17 L36.5 25 L27.5 25 Z" fill="url(#favGold)"/>
+  <circle cx="32" cy="13" r="2.5" fill="url(#favGold)"/>
+  <line x1="23" y1="28" x2="23" y2="48" stroke="url(#favGold)" stroke-width="2"/>
+  <line x1="41" y1="28" x2="41" y2="48" stroke="url(#favGold)" stroke-width="2"/>
+  <path d="M19 49 L45 49" stroke="url(#favGold)" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="32" cy="38" r="3" fill="url(#favGold)"/>
+</svg>

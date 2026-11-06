@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery - UTSAV Stage, Tent & Pandal Contractors</title>
+  <meta name="description" content="Explore real photographs of UTSAV's royal wedding stages, traditional marriage pandals, outdoor lawn marquee tents, and reception decor.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg">
+  <link rel="alternate icon" href="assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <script>
+    (function() {
+      try {
+        const savedDir = localStorage.getItem('utsav_direction') || localStorage.getItem('direction') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+        const savedTheme = localStorage.getItem('utsav_theme') || localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body id="top">
+
+  <!-- Main Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top main-navbar" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo/logo.svg" alt="UTSAV Stage & Pandal Contractor Logo">
+        </a>
+        
+        <div class="d-flex align-items-center d-lg-none gap-2">
+          
+          <button class="theme-toggle-btn" id="themeToggleBtnMobile" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-door-fill"></i>Home 1 – Grand Mandap</a></li>
+                <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-gem"></i>Home 2 – Royal Reception</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html"><i class="bi bi-grid-fill"></i>All Services Overview</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="pages/services/wedding-stage.html"><i class="bi bi-flower1"></i>Wedding Stage Decoration</a></li>
+                <li><a class="dropdown-item" href="pages/services/traditional-pandal.html"><i class="bi bi-building"></i>Traditional Marriage Pandal</a></li>
+                <li><a class="dropdown-item" href="pages/services/reception-decoration.html"><i class="bi bi-stars"></i>Reception Decoration</a></li>
+                <li><a class="dropdown-item" href="pages/services/engagement-decoration.html"><i class="bi bi-heart-fill"></i>Engagement Decoration</a></li>
+                <li><a class="dropdown-item" href="pages/services/birthday-decoration.html"><i class="bi bi-balloon-fill"></i>Birthday Party Setup</a></li>
+                <li><a class="dropdown-item" href="pages/services/corporate-events.html"><i class="bi bi-briefcase-fill"></i>Corporate Event Setup</a></li>
+                <li><a class="dropdown-item" href="pages/services/outdoor-events.html"><i class="bi bi-umbrella-fill"></i>Outdoor Event Tents</a></li>
+                <li><a class="dropdown-item" href="pages/services/floral-decoration.html"><i class="bi bi-flower2"></i>Exotic Floral Decoration</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="navbar-actions d-flex align-items-center gap-2 gap-xl-3 ms-lg-3 mt-3 mt-lg-0 flex-wrap flex-lg-nowrap">
+            <div class="dir-toggle-wrapper d-flex align-items-center justify-content-between w-100 w-lg-auto">
+              <span class="dir-toggle-label d-lg-none text-muted small fw-semibold"><i class="bi bi-translate me-1"></i>Direction:</span>
+              <div class="dir-toggle-group" role="group" aria-label="Language Direction">
+                <button type="button" class="btn btn-dir-toggle active" data-dir="ltr" aria-pressed="true" title="Left-to-Right Layout">LTR</button>
+                <button type="button" class="btn btn-dir-toggle" data-dir="rtl" aria-pressed="false" title="Right-to-Left Layout">RTL</button>
+              </div>
+            </div>
+            <button class="theme-toggle-btn d-none d-lg-inline-flex" id="themeToggleBtn" aria-label="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <a href="get-quote.html" class="btn btn-gold w-100 w-lg-auto text-center justify-content-center">
+              <i class="bi bi-clipboard2-check-fill"></i> Get a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECTION 1: Page Banner -->
+  <section class="page-banner" id="page-banner">
+    <div class="container">
+      <h1 class="reveal-fade-up">Event Photography Gallery</h1>
+      <p class="reveal-fade-up delay-100">
+        A visual journey through our stages, traditional marriage pandals, outdoor tents, and themed celebrations.
+      </p>
+      <nav aria-label="breadcrumb" class="reveal-fade-up delay-200">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Gallery Introduction & Filter Controls -->
+  <section class="section-padding pb-4 bg-white" id="gallery-intro">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <span class="section-subtitle">Real Events Portfolio</span>
+        <h2 class="section-title">Celebrating <span>Unforgettable Moments</span></h2>
+        <div class="divider-ornament"><i class="bi bi-camera-fill"></i></div>
+        <p class="section-description">
+          Browse through high-resolution captures of actual weddings, corporate conferences, and traditional ceremonies completed across South India.
+        </p>
+
+        <!-- Category Filter Buttons -->
+        <div class="gallery-filters mt-4">
+          <button class="gallery-filter-btn active" data-filter="all"><i class="bi bi-grid-fill me-1"></i>All Works</button>
+          <button class="gallery-filter-btn" data-filter="wedding-stage">Wedding Stage</button>
+          <button class="gallery-filter-btn" data-filter="traditional-pandal">Traditional Pandal</button>
+          <button class="gallery-filter-btn" data-filter="reception">Reception</button>
+          <button class="gallery-filter-btn" data-filter="engagement">Engagement</button>
+          <button class="gallery-filter-btn" data-filter="birthday">Birthday</button>
+          <button class="gallery-filter-btn" data-filter="corporate">Corporate</button>
+          <button class="gallery-filter-btn" data-filter="outdoor-events">Outdoor Marquee</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Wedding Stage Gallery -->
+  <section class="section-padding pt-4 bg-white" id="gallery-wedding">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom">
+        <div>
+          <span class="badge bg-danger mb-1">Vedic & Royal</span>
+          <h3 class="fw-bold mb-0">Wedding Stage & Mandap Gallery</h3>
+        </div>
+        <a href="pages/services/wedding-stage.html" class="btn btn-outline-gold btn-sm d-none d-md-inline-block">View Stage Specs &rarr;</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item" data-category="wedding-stage" data-title="Royal Temple Carved Mandap">
+            <img src="assets/images/gallery/wedding-stage/stage-1.jpg" alt="Royal Temple Carved Mandap">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Royal Temple Carved Mandap</h5>
+              <span>Wedding Stage • Chennai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item" data-category="wedding-stage" data-title="Floral Arch Golden Stage">
+            <img src="assets/images/gallery/wedding-stage/stage-2.jpg" alt="Floral Arch Golden Stage">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Floral Arch Golden Stage</h5>
+              <span>Wedding Stage • Bengaluru</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item" data-category="wedding-stage" data-title="Crystal Mandap Canopy">
+            <img src="assets/images/gallery/wedding-stage/stage-3.jpg" alt="Crystal Mandap Canopy">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Crystal Mandap Canopy</h5>
+              <span>Wedding Stage • Coimbatore</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Traditional Pandal Gallery -->
+  <section class="section-padding" style="background: var(--color-cream);" id="gallery-pandal">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom">
+        <div>
+          <span class="badge bg-warning text-dark mb-1">Auspicious Canopies</span>
+          <h3 class="fw-bold mb-0">Traditional Marriage Pandal Gallery</h3>
+        </div>
+        <a href="pages/services/traditional-pandal.html" class="btn btn-outline-gold btn-sm d-none d-md-inline-block">View Pandal Specs &rarr;</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item" data-category="traditional-pandal" data-title="Silk Pleated Grand Pandal">
+            <img src="assets/images/gallery/traditional-pandal/pandal-1.jpg" alt="Silk Pleated Grand Pandal">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Silk Pleated Grand Pandal</h5>
+              <span>Traditional Pandal • Madurai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item" data-category="traditional-pandal" data-title="Velvet Canopy with Brass Bells">
+            <img src="assets/images/gallery/traditional-pandal/pandal-2.jpg" alt="Velvet Canopy with Brass Bells">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Velvet Canopy with Brass Bells</h5>
+              <span>Traditional Pandal • Trichy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item" data-category="traditional-pandal" data-title="Waterproof Monsoon Pandal Structure">
+            <img src="assets/images/gallery/traditional-pandal/pandal-3.jpg" alt="Waterproof Monsoon Pandal">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Waterproof Monsoon Pandal</h5>
+              <span>Traditional Pandal • Salem</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Reception and Engagement Gallery -->
+  <section class="section-padding bg-white" id="gallery-reception-engagement">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom">
+        <div>
+          <span class="badge bg-primary mb-1">Glamour & Romance</span>
+          <h3 class="fw-bold mb-0">Reception & Engagement Setups</h3>
+        </div>
+        <a href="pages/services/reception-decoration.html" class="btn btn-outline-gold btn-sm d-none d-md-inline-block">View Reception Specs &rarr;</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-item" data-category="reception" data-title="Crystal Palace Reception Stage">
+            <img src="assets/images/gallery/reception/reception-1.jpg" alt="Crystal Palace Reception Stage">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Crystal Palace Stage</h5>
+              <span>Reception • Chennai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-item" data-category="reception" data-title="Mirror Glass Runway Stage">
+            <img src="assets/images/gallery/reception/reception-2.jpg" alt="Mirror Glass Runway Stage">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Mirror Glass Runway Stage</h5>
+              <span>Reception • Bengaluru</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-item" data-category="engagement" data-title="Blossom Ring Engagement Arch">
+            <img src="assets/images/gallery/engagement/engagement-1.jpg" alt="Blossom Ring Engagement Arch">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Blossom Ring Arch</h5>
+              <span>Engagement • ECR Chennai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-item" data-category="engagement" data-title="Floral Blossom Ring Engagement Stage">
+            <img src="assets/images/gallery/engagement/engagement-2.jpg" alt="Floral Blossom Ring Engagement Stage">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Floral Blossom Ring</h5>
+              <span>Engagement • Hyderabad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: Birthday and Corporate Event Gallery -->
+  <section class="section-padding" style="background: var(--color-cream);" id="gallery-birthday-corporate">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom">
+        <div>
+          <span class="badge bg-secondary mb-1">Summits & Celebrations</span>
+          <h3 class="fw-bold mb-0">Birthday & Corporate Event Gallery</h3>
+        </div>
+        <a href="pages/services/corporate-events.html" class="btn btn-outline-gold btn-sm d-none d-md-inline-block">View Corporate Specs &rarr;</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-item" data-category="birthday" data-title="Enchanted Garden Birthday Stage">
+            <img src="assets/images/gallery/birthday/birthday-1.jpg" alt="Enchanted Garden Birthday Stage">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Enchanted Garden Theme</h5>
+              <span>Birthday • Chennai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-item" data-category="birthday" data-title="Colourful Celebration Confetti Special">
+            <img src="assets/images/gallery/birthday/birthday-2.jpg" alt="Colourful Celebration Confetti Special">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Celebration Confetti</h5>
+              <span>Celebration Event • Coimbatore</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-item" data-category="corporate" data-title="Leadership Summit Box Truss Stage">
+            <img src="assets/images/gallery/corporate/corporate-1.jpg" alt="Leadership Summit Stage">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Leadership Summit Stage</h5>
+              <span>Corporate • Chennai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-item" data-category="corporate" data-title="National Tech Conference Staging">
+            <img src="assets/images/gallery/corporate/corporate-2.jpg" alt="National Tech Conference">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>National Tech Conference</h5>
+              <span>Corporate • Bengaluru</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: Outdoor Event Gallery -->
+  <section class="section-padding bg-white" id="gallery-outdoor">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom">
+        <div>
+          <span class="badge bg-success mb-1">Open Lawn Arenas</span>
+          <h3 class="fw-bold mb-0">Outdoor Marquee Tents Gallery</h3>
+        </div>
+        <a href="pages/services/outdoor-events.html" class="btn btn-outline-gold btn-sm d-none d-md-inline-block">View Tent Specs &rarr;</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item" data-category="outdoor-events" data-title="Starlight Lawn German Marquee">
+            <img src="assets/images/gallery/outdoor-events/outdoor-1.jpg" alt="Starlight Lawn German Marquee">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Starlight Lawn Marquee</h5>
+              <span>Outdoor Tents • Mahabalipuram</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item" data-category="outdoor-events" data-title="Air-Conditioned German Canopy">
+            <img src="assets/images/gallery/outdoor-events/outdoor-2.jpg" alt="Air-Conditioned German Canopy">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Air-Conditioned German Canopy</h5>
+              <span>Outdoor Tents • Bengaluru</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item" data-category="outdoor-events" data-title="Clear-Span Wedding Arena Tent">
+            <img src="assets/images/gallery/outdoor-events/outdoor-3.jpg" alt="Clear-Span Wedding Arena Tent">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h5>Clear-Span Arena Tent</h5>
+              <span>Outdoor Tents • Coimbatore</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: CTA -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box reveal-fade-up">
+        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">BRING YOUR VISION TO LIFE</span>
+        <h2>Love What You See? <span>Let's Design Yours.</span></h2>
+        <p>
+          Book a free 3D design consultation with our senior architects to bring your dream event stage and pandal to reality.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="get-quote.html" class="btn btn-gold btn-lg">
+            <i class="bi bi-clipboard2-check-fill"></i> Get a Free Quote
+          </a>
+          <a href="contact.html" class="btn btn-outline-light-custom btn-lg">
+            <i class="bi bi-telephone-fill"></i> Contact Our Studio
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Footer -->
+  
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="galleryLightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close Lightbox"><i class="bi bi-x-lg"></i></button>
+      <button class="lightbox-prev" aria-label="Previous Image"><i class="bi bi-chevron-left"></i></button>
+      <button class="lightbox-next" aria-label="Next Image"><i class="bi bi-chevron-right"></i></button>
+      <img src="assets/images/gallery/wedding-stage/stage-1.jpg" alt="Preview Image">
+      <div class="lightbox-caption">
+        <h4>Wedding Stage Decoration</h4>
+        <p>Premium Event Collection</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  
+
+  <!-- JavaScript Files -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/footer.js"></script>
+</body>
+</html>

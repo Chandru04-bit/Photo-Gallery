@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon - Grand Reveal | UTSAV Contractors</title>
+  <meta name="description" content="UTSAV's next-generation 3D event design studio and royal destination mandap collections are launching soon. Stay tuned.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg">
+  <link rel="alternate icon" href="assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <script>
+    (function() {
+      try {
+        const savedDir = localStorage.getItem('utsav_direction') || localStorage.getItem('direction') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+        const savedTheme = localStorage.getItem('utsav_theme') || localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body id="top">
+
+  <!-- Top Navigation Bar with Direction & Theme Controls -->
+  <header class="position-absolute top-0 start-0 end-0 p-3" style="z-index: 100;">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="d-inline-flex align-items-center text-white text-decoration-none">
+        <img src="assets/images/logo/logo-footer.svg" alt="UTSAV Logo" style="height: 38px;">
+      </a>
+      <div class="d-flex align-items-center gap-2 gap-sm-3">
+        <div class="dir-toggle-group" role="group" aria-label="Language Direction">
+          <button type="button" class="btn btn-dir-toggle active" data-dir="ltr" aria-pressed="true" title="Left-to-Right Layout">LTR</button>
+          <button type="button" class="btn btn-dir-toggle" data-dir="rtl" aria-pressed="false" title="Right-to-Left Layout">RTL</button>
+        </div>
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <a href="index.html" class="btn btn-outline-light-custom btn-sm d-none d-sm-inline-flex">
+          <i class="bi bi-house-door-fill me-1"></i> Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- AREA 2: Hero Background & Fullscreen Wrapper -->
+  <div class="coming-soon-wrapper position-relative py-5" style="background: linear-gradient(rgba(58, 12, 24, 0.92), rgba(30, 5, 12, 0.94)), url('assets/images/banners/hero-bg-1.jpg') center/cover no-repeat; min-height: 100vh; display: flex; align-items: center;">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center reveal-fade-up">
+          
+          <!-- AREA 1: Brand Logo -->
+          <a href="index.html" class="d-inline-block mb-4">
+            <img src="assets/images/logo/logo-footer.svg" alt="UTSAV Logo" style="height: 64px;">
+          </a>
+          
+          <div class="mb-3">
+            <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold">
+              <i class="bi bi-stars me-1"></i> GRAND ROYAL UNVEILING
+            </span>
+          </div>
+
+          <!-- AREA 3: Coming Soon Heading -->
+          <h1 class="display-4 text-white fw-bold mb-3">Something Regal is <span>in the Making</span></h1>
+          
+          <!-- AREA 4: Description -->
+          <p class="lead text-white max-w-600 mx-auto mb-4">
+            We are curating our newest collection of handcrafted temple mandaps, German glass canopy marquees, and interactive 3D virtual walkthroughs for the upcoming wedding season.
+          </p>
+
+          <!-- AREA 5: Countdown Timer -->
+          <div class="countdown-box my-4 d-flex justify-content-center gap-3" id="comingSoonCountdown">
+            <div class="p-3 bg-dark bg-opacity-50 border border-secondary border-opacity-50 rounded-4 text-white text-center" style="min-width: 85px;">
+              <div class="display-5 fw-bold text-warning" id="countDays">45</div>
+              <small class="text-white text-uppercase">Days</small>
+            </div>
+            <div class="p-3 bg-dark bg-opacity-50 border border-secondary border-opacity-50 rounded-4 text-white text-center" style="min-width: 85px;">
+              <div class="display-5 fw-bold text-warning" id="countHours">18</div>
+              <small class="text-white text-uppercase">Hours</small>
+            </div>
+            <div class="p-3 bg-dark bg-opacity-50 border border-secondary border-opacity-50 rounded-4 text-white text-center" style="min-width: 85px;">
+              <div class="display-5 fw-bold text-warning" id="countMins">30</div>
+              <small class="text-white text-uppercase">Mins</small>
+            </div>
+            <div class="p-3 bg-dark bg-opacity-50 border border-secondary border-opacity-50 rounded-4 text-white text-center" style="min-width: 85px;">
+              <div class="display-5 fw-bold text-warning" id="countSecs">00</div>
+              <small class="text-white text-uppercase">Secs</small>
+            </div>
+          </div>
+
+          <!-- Notification Form -->
+          <div class="row justify-content-center mb-4">
+            <div class="col-md-8 col-lg-7">
+              <form class="d-flex flex-column flex-sm-row gap-2" onsubmit="event.preventDefault(); alert('Thank you! You will be notified the moment our new collection unveils.'); this.reset();">
+                <input type="email" class="form-control form-control-lg bg-white border-0" placeholder="Enter email for VIP access" required>
+                <button type="submit" class="btn btn-gold px-4">Notify Me</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- AREA 6: Social Media Links -->
+          <div class="d-flex justify-content-center gap-3 mb-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="btn btn-outline-light rounded-circle p-2" style="width: 44px; height: 44px;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-outline-light rounded-circle p-2" style="width: 44px; height: 44px;" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="btn btn-outline-light rounded-circle p-2" style="width: 44px; height: 44px;" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="btn btn-outline-light rounded-circle p-2" style="width: 44px; height: 44px;" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="https://wa.me/919840123456" target="_blank" rel="noopener" class="btn btn-outline-light rounded-circle p-2" style="width: 44px; height: 44px;" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+
+          <!-- AREA 7: Back to Home CTA -->
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="index.html" class="btn btn-outline-light-custom btn-lg">
+              <i class="bi bi-house-door-fill me-1"></i> Return to Current Website
+            </a>
+            <a href="contact.html" class="btn btn-gold btn-lg">
+              <i class="bi bi-telephone-fill me-1"></i> Contact Our Decor Desk
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/footer.js"></script>
+</body>
+</html>
