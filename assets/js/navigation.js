@@ -4,8 +4,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Highlight active menu item based on current URL path
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  // Highlight active menu item based on current URL path (supports clean URLs and .html)
+  const currentPath = (window.location.pathname.split('/').pop() || 'index').replace(/\.html$/, '') || 'index';
   const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .dropdown-item');
 
   navLinks.forEach(link => {
@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!href) return;
 
     // Direct match or root index match
-    const linkFile = href.split('/').pop();
-    if (linkFile === currentPath || (currentPath === '' && linkFile === 'index.html')) {
+    const linkFile = href.split('/').pop().replace(/\.html$/, '');
+    if (linkFile === currentPath || ((currentPath === '' || currentPath === 'index') && (linkFile === 'index' || linkFile === ''))) {
       link.classList.add('active');
 
       // Also set parent dropdown nav-link active if inside dropdown

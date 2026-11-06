@@ -44,9 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     input.addEventListener('paste', (e) => {
       e.preventDefault();
-      const text = (e.clipboardData || window.clipboardData).getData('text') || '';
+      const text = (e.clipboardData || window.clipboardData)?.getData('text') || '';
       const sanitized = text.replace(/[^a-zA-Z\s]/g, '');
-      document.execCommand('insertText', false, sanitized);
+      try {
+        if (!document.execCommand('insertText', false, sanitized)) {
+          input.value = sanitized;
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+      } catch (err) {
+        input.value = sanitized;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+      }
     });
   };
 
@@ -73,9 +81,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     input.addEventListener('paste', (e) => {
       e.preventDefault();
-      const text = (e.clipboardData || window.clipboardData).getData('text') || '';
+      const text = (e.clipboardData || window.clipboardData)?.getData('text') || '';
       const sanitized = text.replace(/[^a-zA-Z\s,.-]/g, '');
-      document.execCommand('insertText', false, sanitized);
+      try {
+        if (!document.execCommand('insertText', false, sanitized)) {
+          input.value = sanitized;
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+      } catch (err) {
+        input.value = sanitized;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+      }
     });
   };
 
@@ -111,9 +127,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     input.addEventListener('paste', (e) => {
       e.preventDefault();
-      const text = (e.clipboardData || window.clipboardData).getData('text') || '';
+      const text = (e.clipboardData || window.clipboardData)?.getData('text') || '';
       const sanitized = text.replace(/\D/g, '').slice(0, 10);
-      document.execCommand('insertText', false, sanitized);
+      try {
+        if (!document.execCommand('insertText', false, sanitized)) {
+          input.value = sanitized;
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+      } catch (err) {
+        input.value = sanitized;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+      }
     });
   };
 

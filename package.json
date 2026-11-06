@@ -1,0 +1,20 @@
+{
+  "name": "utsav-decor-stage-tent-contractor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UTSAV Decor - Premium Stage, Tent & Pandal Contractor Website",
+  "scripts": {
+    "build": "node -e \"console.log('Production build successful: Static assets and HTML ready.')\"",
+    "start": "npx serve .",
+    "test": "node assets/js/main.js"
+  },
+  "keywords": [
+    "wedding-stage",
+    "tent-contractor",
+    "pandal-decoration",
+    "event-contractor",
+    "utsav-decor"
+  ],
+  "author": "UTSAV Decor",
+  "license": "ISC"
+}
